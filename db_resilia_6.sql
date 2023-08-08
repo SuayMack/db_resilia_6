@@ -50,3 +50,24 @@ CREATE TABLE IF NOT EXISTS Estudante (
   id_turma INT,
   FOREIGN KEY (id_turma) REFERENCES Turma(id_turma)
 );
+
+CREATE TABLE  IF NOT EXISTS FinanceiroEstudante (
+    id_financeiro INT AUTO_INCREMENT PRIMARY KEY,
+    id_estudante INT,
+    id_curso INT,
+    valor_total DECIMAL(10, 2),
+    valor_desconto DECIMAL(10, 2),
+    valor_pago DECIMAL(10, 2),
+    status_pagamento VARCHAR(50),
+    FOREIGN KEY (id_estudante) REFERENCES Estudante(id_estudante),
+    FOREIGN KEY (id_curso) REFERENCES Curso(id_curso)
+
+);
+
+CREATE TABLE IF NOT EXISTS FinanceiroResilia (
+    id_despesas INT AUTO_INCREMENT PRIMARY KEY,
+    id_facilitador INT,
+    tipo_despesa VARCHAR(50),
+    valor_despesa DECIMAL(10, 2),
+    FOREIGN KEY (id_facilitador) REFERENCES PessoaFacilitadora(id_facilitador)
+);

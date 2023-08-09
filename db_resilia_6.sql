@@ -33,22 +33,26 @@ CREATE TABLE IF NOT EXISTS Turma (
 -- Tabela Modulo
 CREATE TABLE IF NOT EXISTS Modulo (
   id_modulo INT AUTO_INCREMENT PRIMARY KEY,
+  id_facilitador INT,
   nome VARCHAR(100) NOT NULL,
   descricao VARCHAR(200),
   carga_horaria INT,
   id_curso INT,
-  FOREIGN KEY (id_curso) REFERENCES Curso(id_curso)
+  FOREIGN KEY (id_curso) REFERENCES Curso(id_curso),
+  FOREIGN KEY (id_facilitador) REFERENCES PessoaFacilitadora(id_facilitador)
 );
 
 -- Tabela Estudante
 CREATE TABLE IF NOT EXISTS Estudante (
   id_estudante INT AUTO_INCREMENT PRIMARY KEY,
+  id_modulo INT,
   nome VARCHAR(100) NOT NULL,
   data_nascimento DATE,
   email VARCHAR(100) NOT NULL,
   status VARCHAR(20),
   id_turma INT,
-  FOREIGN KEY (id_turma) REFERENCES Turma(id_turma)
+  FOREIGN KEY (id_turma) REFERENCES Turma(id_turma),
+  FOREIGN KEY (id_modulo) REFERENCES Modulo(id_modulo)
 );
 
 CREATE TABLE  IF NOT EXISTS FinanceiroEstudante (

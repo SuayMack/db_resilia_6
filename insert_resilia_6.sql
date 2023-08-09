@@ -48,4 +48,29 @@ INSERT INTO Estudante (nome, data_nascimento, email, status, id_turma) VALUES
     ('Leonardo Santos', '1996-04-10', 'leonardo.santos@gmail.com', 'Inativo', 2),
     ('Lucio Martins', '1997-09-12', 'lucio.martins@mestredospythons.com', 'Ativo', 1);
 
+-- Inserir registros na tabela FinanceiroEstudante
+Inserir registros na tabela FinanceiroEstudante
+INSERT INTO FinanceiroEstudante (id_estudante, id_curso, valor_total, valor_desconto, valor_pago, status_pagamento) VALUES
+(1, 1, 5000.00, 1000.00, 4000.00, 'Pago'),
+(2, 1, 5000.00, 500.00, 4500.00, 'Pago'),
+(3, 1, 5000.00, 0.00, 2500.00, 'Pendente'),
+(4, 1, 5000.00, 1500.00, 3500.00, 'Pago'),
+(5, 1, 5000.00, 2000.00, 3000.00, 'Pago'),
+(6, 2, 6000.00, 1200.00, 4800.00, 'Pago'),
+(7, 2, 6000.00, 600.00, 5400.00, 'Pago'),
+(8, 2, 6000.00, 0.00, 3000.00, 'Pendente'),
+(9, 2, 6000.00, 1800.00, 4200.00, 'Pago'),
+(10, 2, 6000.00, 2400.00, 3600.00,'Pago');
 
+-- Inserir registros na tabela FinanceiroResilia
+INSERT INTO FinanceiroResilia (id_facilitador,tipo_despesa ,valor_despesa) VALUES
+(1,'Salário',10000.00),
+(2,'Salário',9000.00),
+(3,'Salário',8000.00),
+(4,'Salário',7000.00),
+(5,'Salário',6000.00),
+(NULL,'Transporte',500.00),
+(NULL,'Transporte',400.00),
+(NULL,'Transporte',300.00),
+(NULL,'Transporte',200.00),
+(NULL,'Transporte',100.00);

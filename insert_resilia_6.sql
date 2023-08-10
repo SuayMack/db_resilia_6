@@ -1,15 +1,11 @@
-<<<<<<< HEAD
-=======
 -- Inserção de Pessoas Facilitadoras
->>>>>>> ad55c62e8d60777ba48af1032f92bcd16d955f21
+
 INSERT INTO PessoaFacilitadora (nome, data_nascimento, email, formacao, experiencia) VALUES
     ('João Gomes', '1988-10-15', 'joao.silva@example.com', 'Engenheiro de Software', '10 anos de experiência'),
     ('Maria Souza', '1999-09-22', 'maria.souza@example.com', 'Desenvolvedora Web', '8 anos de experiência'),
     ('Pedro Santos', '1990-09-10', 'pedro.santos@example.com', 'Cientista de Dados', '15 anos de experiência'),
     ('Ana Oliveira', '1987-12-05', 'ana.oliveira@example.com', 'Designer de UI/UX', '6 anos de experiência'),
     ('Lucas Pereira', '1982-03-18', 'lucas.pereira@example.com', 'Analista de Sistemas', '12 anos de experiência');
-
-<<<<<<< HEAD
 
 INSERT INTO Curso (nome, descricao, carga_horaria_total) VALUES
     ('Desenvolvimento Web', 'Curso de desenvolvimento web utilizando HTML, CSS e JavaScript.', 120),
@@ -18,14 +14,12 @@ INSERT INTO Curso (nome, descricao, carga_horaria_total) VALUES
     ('Inteligência Artificial', 'Curso de inteligência artificial e machine learning.', 200),
     ('Gestão de Projetos', 'Curso de gerenciamento de projetos utilizando metodologias ágeis.', 160);
 
-
 INSERT INTO Turma (nome, data_inicio, data_termino, id_curso) VALUES
     ('Turma A', '2023-08-01', '2023-10-30', 1),
     ('Turma B', '2023-08-15', '2023-11-20', 2),
     ('Turma C', '2023-09-01', '2023-12-05', 3),
     ('Turma D', '2023-09-15', '2023-12-20', 2),
     ('Turma E', '2023-10-01', '2023-12-15', 4);
-
 
 INSERT INTO Modulo (id_facilitador, nome, descricao, carga_horaria, id_curso) VALUES
     (1, 'Introdução ao Front-end', 'Conceitos básicos de desenvolvimento front-end.', 40, 1),
@@ -82,7 +76,7 @@ INSERT INTO FinanceiroResilia (id_facilitador, tipo_despesa, valor_despesa) VALU
   (4, 'Transporte', 100.00),
   (5, 'Hospedagem', 400.00),
   (5, 'Alimentação', 180.00);
-=======
+
 -- Inserção de Cursos
 INSERT INTO Curso (id_facilitador, nome, descricao, carga_horaria_total) VALUES
     (1, 'Desenvolvimento Web', 'Curso de desenvolvimento web utilizando HTML, CSS e JavaScript.', 120),
@@ -181,4 +175,3 @@ INSERT INTO FinanceiroFacilitador (id_facilitador, id_aula, valor_aula, data_pag
     (1, 3, 120.00, '2023-08-03'),
     (3, 4, 180.00, '2023-09-06'),
     (1, 5, 90.00, '2023-08-19');
->>>>>>> ad55c62e8d60777ba48af1032f92bcd16d955f21

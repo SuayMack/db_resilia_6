@@ -59,7 +59,25 @@ INSERT INTO Estudante (nome, data_nascimento, email, status, id_turma) VALUES
     ('Vitor Costa', '1999-02-20', 'vitor.costa@gmail.com', 'Ativo', 3),
     ('Isabella Lima', '1994-07-25', 'isabella.lima@gmail.com', 'Ativo', 1),
     ('Leonardo Santos', '1996-04-10', 'leonardo.santos@gmail.com', 'Inativo', 2),
-    ('Lucio Martins', '1997-09-12', 'lucio.martins@mestredospythons.com', 'Ativo', 1);
+    ('Lucio Martins', '1997-09-12', 'lucio.martins@mestredospythons.com', 'Ativo', 1),
+    ('Sofia Almeida','1997-06-19', 'sofalmeida@gmail.com', 'Ativo', 1),
+    ('Lucas Pereira','1998-10-09', 'lucasp@gmail.com','Ativo', 2),
+    ('Mateus Oliveira','1996-10-03','matheusol@gmail.com', 'Ativo', 1),
+    ('Gabriela Silva','1995-05-05', 'gs@gmail.com','Inativo',1),
+    ('Manuela Rodrigues','2000-03-03','manuzinha123@gmail.com', 'Inativo', 1),
+    ('Enzo Ferreira', '2001-10-10', 'enzolegal@gmail.com', 'Ativo',1),
+    ('Luana Martins','1999-07-07', 'luanamartins1@gmail.com', 'Ativo', 2),
+    ('Daniel Barbosa', '1987-05-05', 'danielzinho14@gmail.com', 'Ativo', 2),
+    ('Julia Carvalho', '1981-01-01', 'juliacarvalho@gmail.com', 'Ativo', 1),
+    ('Pedro Sousa', '1985-05-03', 'pedro1985@gmail.com', 'Ativo', 1),
+    ('Laura Gomes', '1998-02-04', 'laurinha10@gmail.com', 'Ativo',2),
+    ('Gabriel Fernandes','2000-10-14', 'gabrielvidaloca@gmail.com', 'Ativo',1),
+    ('Alice Ribeiro','1987-12-20', 'alice20@gmail.com','Inativo', 2),
+    ('Rafael Lima', '1997-06-15','rafalima@gmail.com', 'Ativo',1),
+    ('Beatriz Andrade', '1971-04-04', 'beaandrade@gmail.com', 'Ativo', 1),
+    ('João Castro', '1974-05-25', 'joaocastro1@gmail.com', 'Ativo', 1),
+    ('Eduarda Miranda', '1985-11-26', 'eduardam@gmail.com', 'Ativo', 1),
+    ('André Neves', '1984-03-29', 'andrezinho1@gmail.com', 'Ativo', 2);
 
 -- Inserção de FinanceiroEstudante
 INSERT INTO FinanceiroEstudante (id_estudante, id_curso, valor_total, valor_desconto, valor_pago, status_pagamento) VALUES

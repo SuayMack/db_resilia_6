@@ -30,16 +30,11 @@ SELECT
     T.nome AS nome_turma,
     C.nome AS nome_curso,
     COUNT(E.id_estudante) AS quantidade_estudantes
-FROM
-    Turma T
-JOIN
-    Curso C ON T.id_curso = C.id_curso
-LEFT JOIN
-    Estudante E ON T.id_turma = E.id_turma
-GROUP BY
-    T.id_turma, C.id_curso
-ORDER BY
-    nome_turma;
+FROM Turma T
+JOIN Curso C ON T.id_curso = C.id_curso
+LEFT JOIN Estudante E ON T.id_turma = E.id_turma
+GROUP BY T.id_turma, C.id_curso
+ORDER BY nome_turma;
     
 /* Obter informações financeiras sobre os estudantes, 
 incluindo o valor total pago por cada estudante em cada turma. */
@@ -48,12 +43,8 @@ SELECT
     T.nome AS nome_turma,
     FE.valor_total AS valor_total_curso,
     FE.valor_pago AS valor_pago
-FROM
-    Estudante E
-JOIN
-    FinanceiroEstudante FE ON E.id_estudante = FE.id_estudante
-JOIN
-    Turma T ON E.id_turma = T.id_turma
-ORDER BY
-    nome_turma, nome_estudante;
+FROM Estudante E
+JOIN FinanceiroEstudante FE ON E.id_estudante = FE.id_estudante
+JOIN Turma T ON E.id_turma = T.id_turma
+ORDER BY nome_turma, nome_estudante;
 

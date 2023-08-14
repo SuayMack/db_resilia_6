@@ -22,4 +22,38 @@ FROM Turma t
 LEFT JOIN Estudante e ON t.id_turma = e.id_turma
 GROUP BY t.id_turma, t.nome;
 
--- 4. Criar um trigger para ser disparado quando o atributo status de um estudante for atualizado e inserir um novo dado em uma tabela de log.
+-- 4. consulta, que deverá ser respondida por scripts SQL e que combine pelo menos 3 tabelas
+/* para obter informações interessantes sobre os estudantes, as turmas em que estão matriculados
+ e os cursos relacionados. Essa consulta vai  dar uma visão geral de quantos estudantes estão em 
+ cada turma e qual o curso associado a cada uma delas. */
+SELECT
+    T.nome AS nome_turma,
+    C.nome AS nome_curso,
+    COUNT(E.id_estudante) AS quantidade_estudantes
+FROM
+    Turma T
+JOIN
+    Curso C ON T.id_curso = C.id_curso
+LEFT JOIN
+    Estudante E ON T.id_turma = E.id_turma
+GROUP BY
+    T.id_turma, C.id_curso
+ORDER BY
+    nome_turma;
+    
+/* Obter informações financeiras sobre os estudantes, 
+incluindo o valor total pago por cada estudante em cada turma. */
+SELECT
+    E.nome AS nome_estudante,
+    T.nome AS nome_turma,
+    FE.valor_total AS valor_total_curso,
+    FE.valor_pago AS valor_pago
+FROM
+    Estudante E
+JOIN
+    FinanceiroEstudante FE ON E.id_estudante = FE.id_estudante
+JOIN
+    Turma T ON E.id_turma = T.id_turma
+ORDER BY
+    nome_turma, nome_estudante;
+

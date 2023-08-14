@@ -148,7 +148,7 @@ INSERT INTO FinanceiroEstudante (id_estudante, id_curso, valor_total, valor_desc
     (47, 2, 1800.00, 150.00, 1650.00, 'Pago'),
     (48, 3, 1300.00, 0.00, 1300.00, 'Pago'),
     (49, 4, 2000.00, 200.00, 1800.00, 'Pago'),
-    (50, 5, 1600.00, 50.00, 1550.00, 'Pago');
+    (50, 5, 1600.00, 50.00, 1550.00, 'Pago'),
     (51, 1, 1500.00, 50.00, 1450.00, 'Pago');
 
 -- Inserção de ParticipacaoEstudante

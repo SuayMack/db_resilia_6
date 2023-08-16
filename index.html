@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DB Resilia</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- materialize Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./Model/style/style.css">
+</head>
+<body>
+
+  <header>
+    <section class="container">
+      <img src="./Model/image/Database.svg" alt="Logo" class="logo">
+      <div>
+        <h3>Banco de dados</h3>
+        <h5>Projeto Resilia</h5>
+      </div>         
+    </section>
+  </header>
+
+  <main class="container">
+
+    <section id="introducao">
+      <h4 class="titulo">Introdução ao Projeto</h4>
+      <p class="paragrafo">
+        Bem-vindos à apresentação do nosso projeto de modernização do armazenamento de dados na Resilia!
+      </p>  
+      <p class="paragrafo">
+        Neste projeto, nossa equipe se dedicou a reestruturar a forma como a Resilia gerencia informações cruciais relacionadas aos estudantes, facilitadores, turmas, módulos e cursos. O objetivo principal é otimizar a extração de dados estratégicos para facilitar a tomada de decisão.
+      </p>
+      <div class="container_anima_intro">
+        <div class="anima_intro"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+      <p class="paragrafo">
+        Nossa jornada envolveu a modelagem do banco de dados, a criação de scripts SQL, a inserção de dados e a resolução de perguntas estratégicas para a empresa. Através deste site, compartilhamos como planejamos e executamos cada etapa do projeto.
+      </p>
+      <p class="paragrafo">
+        Em nossa apresentação, exploraremos os detalhes do projeto, desde a criação da base de dados até a análise exploratória dos resultados. Fique à vontade para baixar os arquivos e scripts do projeto em nosso repositório do GitHub.
+      </p>    
+    </section>
+
+    <section id="planejamento">
+      <h4 class="titulo">Planejamento</h4>
+      <p class="paragrafo">
+        Nosso projeto de modernização do armazenamento de dados na Resilia foi cuidadosamente planejado para atender às necessidades estratégicas da empresa. Inicialmente, nos dedicamos a entender profundamente o cenário atual, no qual os dados relacionados a estudantes, facilitadores, turmas, módulos e cursos deveriam ser armazenados, facilitando a análise e tomada de decisões assertivas. Essa análise detalhada nos permitiu identificar e definir objetivos claros para o projeto.
+      </p>
+      <p class="paragrafo">
+        Com os requisitos em mãos, iniciamos a fase de modelagem do banco de dados. Criamos uma estrutura que representa as entidades relevantes e seus atributos, bem como os relacionamentos entre elas. Garantimos que as chaves primárias e estrangeiras fossem definidas corretamente, facilitando a integridade e consistência dos dados.
+      </p>
+      <div class="image_container">
+        <img src="./Model/image/EER_Diagram.png" alt="Diagrama do Projeto">
+        <small class="image_descricao">Diagrama gerado no MySQL Workbench</small>
+      </div>
+      <p class="paragrafo">
+        A seguir, desenvolvemos scripts SQL para criar o banco de dados e suas tabelas, bem como inserir dados de exemplo para testes.
+      </p>
+      <p class="paragrafo">
+        Para atender às necessidades estratégicas da Resilia, também elaboramos consultas SQL que respondem a perguntas específicas sobre a área de ensino. Isso nos permitiu extrair insights valiosos e direcionar ações eficazes com base nos dados.
+      </p>
+      <p class="paragrafo">
+        Além disso, como parte do projeto, pensamos em consultas adicionais que agregassem valor à exploração dos dados. Uma vez que os aspectos técnicos foram concluídos, nos concentramos em preparar uma apresentação detalhada dos resultados. Utilizamos slides para ilustrar nossa modelagem, os principais scripts SQL, os insights obtidos e como atendemos aos requisitos do projeto.
+      </p>
+      <p class="paragrafo">
+        Para enriquecer nossa apresentação e visualizar os insights obtidos, utilizamos o Power BI para criar gráficos intuitivos e informativos. Primeiramente, coletamos os dados do nosso banco de dados MySQL e os importamos para o Power BI. Em seguida, selecionamos as métricas relevantes, como o número de estudantes por turma e o status de evasão, para construir gráficos claros e eficazes.
+      </p>
+      <div class="image_container">
+        <img src="./Model/image/graficoPBIX.png" alt="Imagem do Projeto">
+        <small class="image_descricao">Gráficos gerados no PowerBI</small>
+      </div>
+      <p class="paragrafo">
+        Utilizamos uma variedade de tipos de gráficos, como barras e pizza, para representar diferentes aspectos dos dados. Com a funcionalidade de filtros interativos, tornamos possível explorar os dados de maneira dinâmica, permitindo que os usuários escolham quais informações desejam visualizar. Além disso, ajustamos cores e rótulos para tornar os gráficos mais legíveis e atraentes.
+      </p>  
+      <p class="paragrafo">
+        Ao criar nosso painel no Power BI, destacamos as principais métricas e insights identificados durante o projeto. Isso incluiu a distribuição dos estudantes por turma, a taxa de evasão e a participação de cada facilitador nas aulas. Ao compartilhar esses gráficos na nossa apresentação, conseguimos transmitir de forma clara e impactante os resultados do nosso trabalho e o valor das análises realizadas.
+      </p>
+      <p class="paragrafo">
+        Finalmente, consolidamos nossos esforços em um repositório no GitHub, onde todos os scripts, códigos e materiais da apresentação estão disponíveis para acesso. Essa abordagem colaborativa nos permitiu trabalhar de maneira eficiente como uma equipe coesa e garantir que cada etapa do projeto fosse bem documentada.
+      </p>
+      <p class="paragrafo">
+        Em resumo, nosso planejamento minucioso, dedicação à modelagem de dados, criação de consultas estratégicas e preparação cuidadosa da apresentação resultaram em um projeto sólido que modernizou significativamente a gestão de informações na Resilia.
+      </p>
+    </section>  
+
+    <section id="repositorio">
+      <h4 class="titulo">Repositório no GitHub</h4>
+      <p class="paragrafo">
+          Todo o código-fonte, scripts SQL e arquivos relacionados ao projeto podem ser encontrados no repositório do GitHub.
+      </p>
+      <a href="https://github.com/SuayMack/db_resilia_6" target="_blank">Acessar Repositório</a>
+    </section>
+
+    <section id="arquivos">
+      <h4 class="titulo"> Arquivos </h4>
+      <div class="container">
+        <p>
+          Aqui abaixo você pode baixar os arquivos do projeto.  
+        </p>
+        <a class="btn-floating pulse">
+          <i class="small material-icons">arrow_downward</i>
+        </a>
+      </div>
+      
+      <div class="container">
+        <div class="collection">
+
+          <a href="./SQL/db_resilia_6.sql" download class="collection-item">
+            <i class="fa-solid fa-database"></i>            
+            <span class="badge">Banco de Dados Resilia</span>
+            SQL
+          </a>
+          <a href="./SQL/insert_resilia_6.sql" download class="collection-item">
+            <i class="fa-solid fa-layer-group"></i>
+            <span class="badge">Inserindo registros</span>
+            SQL
+          </a>
+          <a href="./SQL/questoes.sql" download class="collection-item">
+            <i class="fa-solid fa-layer-group"></i>
+            <span class="badge">Consultas</span>
+            SQL
+          </a>
+          <a href="./Model/pbix/projeto_resilia.pbix" download class="collection-item">
+            <i class="fa-regular fa-chart-bar"></i>
+            <span class="badge">Arquivo modelo PowerBI</span>
+            PBIX
+          </a>
+          <a href="./Model/mwb/EER_Diagram.mwb" download class="collection-item">
+            <i class="fa-regular fa-file-pdf"></i>
+            <span class="badge">Diagrama de Relacionamento MySQL</span>
+            MWB
+          </a>
+          <a href="./Model/mwb/modelo_eer_biblioteca.mwb" download class="collection-item">
+            <i class="fa-solid fa-network-wired"></i>
+            <span class="badge">Modelo Diagrama de Relacionamento da Biblioteca</span>
+            mwb
+          </a>
+          
+        </div>
+      </div>
+      
+    </section>
+    
+  </main>
+
+  <footer >
+    <section class="container">
+      <!-- Tecnologias -->
+      <section id="tecnologias"> 
+        <h6>Tecnolgias</h6>
+        <div>
+          <a href="https://www.mysql.com/products/workbench/" target="_blank">MySQL</a>
+        <a href="https://powerbi.microsoft.com/pt-br" target="_blank">PowerBI</a>
+      </div>
+      </section>
+      <!-- Colaboradores -->
+      <section id="colaboradores">
+        <h6>Colaboradores</h6>
+        <div>
+          <a href="https://www.linkedin.com/in/priscilachueryz/" target="_blank">Priscila</a>
+          <a href="https://www.linkedin.com/in/lucasrolando/" target="_blank">Lucas</a>
+          <a href="https://www.linkedin.com/in/laurenmartinss/" target="_blank">Lauren</a>
+          <a href="https://www.linkedin.com/in/julianebueno1/" target="_blank">Juliane</a>
+          <a href="https://www.linkedin.com/in/isabelle-ramos-pontes-b30962276/" target="_blank">Isabelle</a>
+        </div>
+      </section>
+    </section>
+  </footer>
+
+</body>
+</html>

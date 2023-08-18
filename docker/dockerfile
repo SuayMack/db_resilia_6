@@ -1,0 +1,12 @@
+FROM mysql:latest
+
+ARG ROOT_PASSWORD=1234
+ENV MYSQL_ROOT_PASSWORD=${ROOT_PASSWORD}
+
+ENV MYSQL_DATABASE=teste
+
+COPY ./setup.sql /docker-entrypoint-initdb.d/setup.sql
+
+EXPOSE 3306
+
+CMD [ "mysqld" ]

@@ -11,6 +11,16 @@ Nossa equipe foi escalada pela Resilia para modernizar o processo de armazenamen
 
 Tendo o [MySql](https://dev.mysql.com/downloads/workbench/) instalado, baixe o [zip do projeto](https://github.com/SuayMack/db_resilia_6/archive/refs/heads/main.zip) e execute no workbench o script de construção das entidades "db_resilia_6.sql" e após popular o banco com o script "insert_resilia_6.sql".
 
+Para rodar o docker:
+
+ - na pasta do projeto, abrir o terminal e dar os comandos:
+
+```
+cd docker
+docker build -t setup-compose .
+docker-compose up
+```
+
 ## ✍ Modelagem das entidades
 
 <img width="80%" alt="diagrama de relacionamento" src="./Model/image/EER_Diagram.png"/>
